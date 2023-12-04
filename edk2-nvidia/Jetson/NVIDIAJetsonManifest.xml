@@ -30,9 +30,9 @@
   <RemoteList>
     <!-- The 'name' attribute for each Remote tag must be unique. -->
     <Remote name="Edk2Repo">https://github.com/NVIDIA/edk2.git</Remote>
-    <Remote name="Edk2PlatformsRepo">https://github.com/NVIDIA/edk2-platforms.git</Remote>
+    <Remote name="Edk2PlatformsRepo">https://github.com/glydways/nvidia-edk2-platforms.git</Remote>
     <Remote name="Edk2NonOsiRepo">https://github.com/NVIDIA/edk2-non-osi.git</Remote>
-    <Remote name="Edk2NvidiaRepo">https://github.com/NVIDIA/edk2-nvidia.git</Remote>
+    <Remote name="Edk2NvidiaRepo">https://github.com/glydways/nvidia-edk2-nvidia.git</Remote>
     <Remote name="Edk2NvidiaNonOsiRepo">https://github.com/NVIDIA/edk2-nvidia-non-osi.git</Remote>
     <Remote name="OpenRmRepo">https://github.com/NVIDIA/open-gpu-kernel-modules.git</Remote>
   </RemoteList>
@@ -89,6 +89,13 @@
       <Source localRoot="edk2-non-osi" remote="Edk2NonOsiRepo" tag="r35.2.1-upstream-20220830"/>
       <Source localRoot="edk2-platforms" remote="Edk2PlatformsRepo" tag="r35.2.1-upstream-20220830" sparseCheckout="true" />
       <Source localRoot="edk2-nvidia" remote="Edk2NvidiaRepo" tag="r35.2.1"/>
+      <Source localRoot="edk2-nvidia-non-osi" remote="Edk2NvidiaNonOsiRepo" tag="r35.2.1"/>
+    </Combination>
+    <Combination name="r35.2.1+glydways" description="The r35.2.1 release">
+      <Source localRoot="edk2" remote="Edk2Repo" tag="r35.2.1-edk2-stable202208" enableSubmodule="true" />
+      <Source localRoot="edk2-non-osi" remote="Edk2NonOsiRepo" tag="r35.2.1-upstream-20220830"/>
+      <Source localRoot="edk2-platforms" remote="Edk2PlatformsRepo" tag="r35.2.1-upstream-20220830+glydways1" sparseCheckout="true" />
+      <Source localRoot="edk2-nvidia" remote="Edk2NvidiaRepo" tag="r35.2.1+glydways1"/>
       <Source localRoot="edk2-nvidia-non-osi" remote="Edk2NvidiaNonOsiRepo" tag="r35.2.1"/>
     </Combination>
     <Combination name="r35.2.1-updates" description="The r35.2.1 release, plus updates">
