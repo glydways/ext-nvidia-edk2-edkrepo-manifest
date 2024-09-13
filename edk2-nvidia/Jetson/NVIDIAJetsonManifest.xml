@@ -140,6 +140,13 @@
       <Source localRoot="edk2-nvidia" remote="Edk2NvidiaRepo" tag="r35.4.1-updates"/>
       <Source localRoot="edk2-nvidia-non-osi" remote="Edk2NvidiaNonOsiRepo" tag="r35.4.1-updates"/>
     </Combination>
+     <Combination name="r36.3.0" description="The r36.3.0 release">
+      <Source localRoot="edk2" remote="Edk2Repo" tag="r36.3.0" enableSubmodule="true" />
+      <Source localRoot="edk2-non-osi" remote="Edk2NonOsiRepo" tag="r36.3.0"/>
+      <Source localRoot="edk2-platforms" remote="Edk2PlatformsRepo" tag="r36.3.0+glydways" sparseCheckout="true" />
+      <Source localRoot="edk2-nvidia" remote="Edk2NvidiaRepo" tag="r36.3.0+glydways"/>
+      <Source localRoot="edk2-nvidia-non-osi" remote="Edk2NvidiaNonOsiRepo" tag="r36.3.0"/>
+    </Combination>
   </CombinationList>
 
   <DscList>
